@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
+from PIL import Image
 
 %%time 
 
@@ -34,7 +35,9 @@ pivot = basic.pivot_table(
 pivot.columns = ['all_movies', 'rated_movies']
 pivot.plot.line(y=['all_movies', 'rated_movies']);
 plt.show() # this line, combined with importing matplotlib.pyplot as plt gets rid of the pandas df error: <matplotlib.axes._subplots.AxesSubplot>
-<img src="https://github.com/jj1787/sql-practice/blob/master/images/Graph.png">
+
+myImage = Image.open("Graph.png");
+myImage.show();
 
 %%time
 
