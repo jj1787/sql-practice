@@ -2,6 +2,7 @@
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
+from PIL import Image
 from sqlalchemy import create_engine
 
 conn_string_facebook = 'mysql://{user}:{password}@{host}:{port}/{db}?charset=utf8'.format(
@@ -39,3 +40,5 @@ plt.rcParams['figure.figsize'] = (15, 7)
 weekly_signups = df_members.resample('1W').sum() #to resample time-series data
 weekly_signups.cumsum().plot();
 
+myImage = Image.open("Graph2.png"); #View image in sql-practice directory
+myImage.show();
