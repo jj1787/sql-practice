@@ -50,6 +50,6 @@ GROUP BY year
 ORDER BY year
 '''
 df_movies = pd.read_sql(query, con=engine_imdb)
-
+df_movies.sample(5)
 
 
