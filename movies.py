@@ -41,7 +41,7 @@ myImage.show();
 
 %%time
 
-#Approach 2 is 80% FASTER, completed in about 300 ms. First, aggregate selected data in SQL, then analyze in pandas.
+#Approach 2 is 80% FASTER, completed in about 300 ms. First, aggregate necessary data in SQL, then analyze in pandas.
 
 query = '''
 SELECT year, COUNT(*) AS all_movies, COUNT(rank) AS rated_movies
