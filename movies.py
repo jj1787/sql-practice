@@ -36,7 +36,7 @@ pivot.columns = ['all_movies', 'rated_movies']
 pivot.plot.line(y=['all_movies', 'rated_movies']);
 plt.show() # this line, combined with importing matplotlib.pyplot as plt gets rid of the pandas df error: <matplotlib.axes._subplots.AxesSubplot>
 
-myImage = Image.open("Graph.png");
+myImage = Image.open("Graph.png"); #View image in sql-practice directory
 myImage.show();
 
 %%time
